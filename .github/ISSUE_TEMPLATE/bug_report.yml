@@ -17,7 +17,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: Output of `elvish -version`
+      label: Output of "elvish -version"
       description: |
         The bug may have already been fixed. Whenever possible, please use either the latest release or the latest development build to see the bug still exists. You can still file an issue if you are running an old version and it's too hard to install a new version.
     validations:

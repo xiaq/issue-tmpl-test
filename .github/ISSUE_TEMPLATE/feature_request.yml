@@ -17,7 +17,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: Output of `elvish -version`
+      label: Output of "elvish -version"
       description: |
         The feature may have already been added. Whenever possible, please use the latest development build to see if it has the feature you need. You can still file an issue if you are running an old version and it's too hard to install a new version.
     validations:
