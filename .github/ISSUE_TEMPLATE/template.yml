@@ -1,5 +1,5 @@
-name: Issue Report
-description: File a bug report or feature request
+name: Bug Report
+description: File a bug report
 body:
   - type: markdown
     attributes:
@@ -7,29 +7,22 @@ body:
         Thanks for taking the time to file an issue. Here are some tips:
 
         - Please only use issues for bug reports and feature requests. If you need help with Elvish, the user group (linked from the repo README) is a more suitable place.
-
         - Please search existing issues to see if the same or similar report has been filed before.
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
+      label: What happened, and what did you expect to happen?
       placeholder: Tell us what you see!
-      value: "A bug happened!"
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: version
     attributes:
       label: Version
       description: |
-        What version of Elvish are you running? You can find out by running `elvish -version`.
+        Only bugs affecting the latest release or the latest development versions will be fixed. You can still file an issue if you are running an older version, but the issue will be closed if it's already been addressed.
 
-        Note that only the latest release version and the latest development versions are officially supported. You can still file an issue if you are not using one of them, but the issue will be closed if it's been addressed there.
-      options:
-        - 0.20.1 (latest release)
-        - 0.21.0-dev-... (development version)
-      default: 0
+        You can find out Elvish's version by running `elvish -version`.
     validations:
       required: true
   - type: checkboxes
