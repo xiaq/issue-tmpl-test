@@ -6,12 +6,9 @@ body:
       value: |
         Thanks for taking the time to file an issue. Here are some tips:
 
-        - Please only use issues for bug reports and feature requests. If you
-          need help with Elvish, the user group (linked from the repo README) is
-          a more suitable place.
+        - Please only use issues for bug reports and feature requests. If you need help with Elvish, the user group (linked from the repo README) is a more suitable place.
 
-        - Please search existing issues to see if the same or similar report has
-          been filed before.
+        - Please search existing issues to see if the same or similar report has been filed before.
   - type: textarea
     id: what-happened
     attributes:
@@ -26,13 +23,9 @@ body:
     attributes:
       label: Version
       description: |
-        What version of Elvish are you running? You can find out by running
-        `elvish -version`.
+        What version of Elvish are you running? You can find out by running `elvish -version`.
 
-        Note that only the latest release version and the latest development
-        versions are officially supported. You can still file an issue if you
-        are not using one of them, but the issue will be closed if it's been
-        addressed there.
+        Note that only the latest release version and the latest development versions are officially supported. You can still file an issue if you are not using one of them, but the issue will be closed if it's been addressed there.
       options:
         - 0.20.1 (latest release)
         - 0.21.0-dev-... (development version)
@@ -43,8 +36,6 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: |
-        I agree to follow Elvish's [Code of Conduct](https://src.elv.sh/CODE_OF_CONDUCT.md).
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: I agree to follow Elvish's [Code of Conduct](https://src.elv.sh/CODE_OF_CONDUCT.md).
           required: true
